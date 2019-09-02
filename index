@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+
+<head>
+  <meta charset="utf-8">
+  <title>ORIOLA DAVID mycalculator</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+  
+  
+</head>
+
+<body>
+    <p>SIMPLE CALCULATOR</p>
+
+    <form name="mycalculator">
+        <table>
+           <!-- Display the result from the computation  -->
+           <tr>
+              <td colspan="4">
+                 <input type="text" name="my-result" id="display" disabled>
+                
+              </td>
+           </tr><!-- End of Display table row  -->
+           
+           <!-- The first table row that holds one, two three and plus-->
+           <tr>
+                 <td><input type="button" name="one" value="1" onclick="mycalculator.display.value += '1'"></td>
+                 <td><input type="button" name="two" value="2" onclick="mycalculator.display.value += '2'"></td>
+                 <td><input type="button" name="three" value="3" onclick="mycalculator.display.value += '3'"></td>
+                 <td><input type="button" name="plus" value="+" onclick="mycalculator.display.value += '+'"></td>
+          </tr><!-- End of the first row that holds one, two three and plus-->
+
+          <!-- The second table row that holds four, five, six and minus-->
+          <tr>
+                 <td><input type="button" name="four" value="4" onclick="mycalculator.display.value += '4'"></td>
+                 <td><input type="button" name="five" value="5" onclick="mycalculator.display.value += '5'"></td>
+                 <td><input type="button" name="six" value="6" onclick="mycalculator.display.value += '6'"></td>
+                 <td><input type="button" name="minus" value="-" onclick="mycalculator.display.value += '-'"></td>
+          </tr> <!-- End of the second table row that holds four, five, six and minus-->
+
+          <!-- The third table row that holds seven, eight, nine and multiply operator-->
+          <tr>
+                 <td><input type="button" name="seven" value="7" onclick="mycalculator.display.value += '7'"></td>
+                 <td><input type="button" name="eight" value="8" onclick="mycalculator.display.value += '8'"></td>
+                 <td><input type="button" name="nine" value="9" onclick="mycalculator.display.value += '9'"></td>
+                 <td><input type="button" name="times" value="x" onclick="mycalculator.display.value += '*'"></td>
+          </tr> <!-- End of the third table row that holds seven, eight, nine and multiply operator-->
+
+        <!-- The fourth row that holds clear, zero, equal to and divide operator-->
+          <tr>
+                 <td><input type="button" id="clear" name="clear" value="c" onclick="mycalculator.display.value = ''"></td>
+                 <td><input type="button" name="zero" value="0" onclick="mycalculator.display.value += '0'"></td>
+                 <td><input type="button" name="calcula" value="=" onclick="mycalculator.display.value = eval(mycalculator.display.value)"></td>
+                 <td><input type="button" name="divid" value="/" onclick="mycalculator.display.value += '/'"></td>
+           
+           </tr>  <!-- The end of the  fourth row that holds clear, zero, equal to and divide operator-->
+        </table>
+     </form>
+  
+
+  
+</body>
+
+</html>
